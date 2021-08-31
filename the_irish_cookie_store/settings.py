@@ -43,6 +43,15 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
+    'cakes',
+    'about',
+    'bag',
+    'checkout',
+
+    # Other
+    'crispy_forms',
+
+
 ]
 
 MIDDLEWARE = [
@@ -56,6 +65,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'the_irish_cookie_store.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -71,10 +82,17 @@ TEMPLATES = [
                 'django.template.context_processors.request', # Required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'bag.contexts.bag_contents',
             ],
+             'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
@@ -151,6 +169,9 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
