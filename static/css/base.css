@@ -212,7 +212,6 @@ a.category-badge > span.badge:hover {
     }
 }
 
-
 @media (max-width: 390px) {
     .list-inline-item {
         margin-right: 0 !important;
