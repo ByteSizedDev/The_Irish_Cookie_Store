@@ -30,7 +30,7 @@ The Irish Cookie Store is located in Co.Waterford. They make fresh artisan cooki
 ## Colours
 ## Fonts
 
-The font used in this project is "Lato".
+The font used in this project is "Roberto Condensed".
 
 ## Icons
 

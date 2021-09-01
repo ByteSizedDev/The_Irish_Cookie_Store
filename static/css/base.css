@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 html {
     height: 100%;
 }
 
 body {
     height: calc(100vh - 164px);
-    font-family: 'Lato';
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* from Bulma */
@@ -23,6 +25,7 @@ body {
 
 .info {
     padding: 30px;
+    text-align: center;
 }
 
 .product-images {
@@ -221,7 +224,7 @@ a.category-badge > span.badge:hover {
         height: calc(100vh - 116px);
     }
 }
-
+/* fix mobile icons on navbar */
 @media (max-width: 390px) {
     .list-inline-item {
         margin-right: 0 !important;
