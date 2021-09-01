@@ -22,8 +22,18 @@ body {
 }
 
 .info {
-    padding: 20px;
+    padding: 30px;
 }
+
+.product-images {
+    width: 360px;
+    height: 480px;
+}
+
+.image-container {
+    text-align: center;
+}
+
 
 .logo-font {
     text-transform: uppercase;
