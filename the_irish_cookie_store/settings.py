@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import dj_database_url
 if os.path.exists("env.py"):
   import env 
 
@@ -123,11 +124,15 @@ WSGI_APPLICATION = 'the_irish_cookie_store.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#   }
+#}
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.parse('postgres://snlyzzotgsybzo:f7d0c90ac2d4895d8f33b19df7c03913ba6f708ba6d546f549c345d64f158791@ec2-52-213-119-221.eu-west-1.compute.amazonaws.com:5432/d2q55vkrtj1di2')
 }
 
 
