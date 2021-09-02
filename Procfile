@@ -1,1 +1,1 @@
-web: gunicorn the_irish_cookie_store.wsgi.application
+web: gunicorn the_irish_cookie_store.wsgi:application
