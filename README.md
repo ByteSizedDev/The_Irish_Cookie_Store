@@ -45,7 +45,7 @@ The Irish Cookie Store is located in Co.Waterford. They make fresh artisan cooki
 
 ## Structure
 
-* The website is build using multipal pages, using Django apps. 
+* The website is build using multiple pages, using Django apps. 
 
 * Each page has a navbar and footer container social links.
 
@@ -63,7 +63,7 @@ This website has the following features:
 
 * An about us page telling the using some more information about the company.
 
-* The website has login and logout functionality after regeristering as a user.
+* The website has login and logout functionality after registering as a user.
 
 * There is a profile page for the user the view there orders and shopping history.
 
@@ -75,7 +75,7 @@ This website has the following features:
 
 ## Colours
 
-* The project is mainly done in black and white. The background is white and the font is back
+* The project is mainly done in black and white. The background is white and the font is back.
 
 * Colors come from the images been used in the project.
 
@@ -142,7 +142,7 @@ Here are a list of all the languages and technologies I've used in this project.
 
 * My code has been run through W3C Validators.
 
-* Tests have been done to make sure Stripe payments is correctly connected to the application.
+* Tests have been done to make sure Stripe payments are correctly connected to the application.
 
 * Products have been added, edited and deleted in the application(CRUD)
 
@@ -158,7 +158,7 @@ To run this project locally:
 
 * Open your text editor.
 
-* Copy the link from the repository on "Clone or download"
+* Copy the link from the repository on "Clone or download".
 
 * Type git clone, then the URL you copied. git clone https://github.com/ByteSizedDev/The_Irish_Cookie_Store.git
 
