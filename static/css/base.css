@@ -8,6 +8,7 @@ html {
 body {
     height: calc(100vh - 164px);
     font-family: 'Roboto Condensed', sans-serif;
+    background-color:#FFFDD0;
 }
 
 /* from Bulma */
@@ -17,6 +18,11 @@ body {
     justify-content: center;
     height: 1.2rem;
     width: 1.2rem;
+}
+
+.icon2 {
+    color: black;
+
 }
 
 /* homepage background */
@@ -29,10 +35,6 @@ body {
 .info {
     padding: 30px;
     text-align: center;
-}
-
-i {
-    color: black;
 }
 
 /* sizing of images */

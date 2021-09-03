@@ -77,9 +77,9 @@ This website has the following features:
 
 * The project is mainly done in black and white. The background is white and the font is back.
 
-* Colors come from the images been used in the project.
+* On the home page I have used "Cookies" and "Cream" colors.
 
-* On the home page there is a "Cookie" colored font used.
+* Other colors come from the images been used in the project.
 
 ## Fonts
 
@@ -131,6 +131,14 @@ Here are a list of all the languages and technologies I've used in this project.
 * Bootstrap
 
 * Django
+
+### Other Technologies
+
+* Stripe
+
+* S3
+
+* Amazon Web Services
 
 # Testing
 
