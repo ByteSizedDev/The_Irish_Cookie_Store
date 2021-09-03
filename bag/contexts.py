@@ -20,7 +20,12 @@ def bag_contents(request):
             'product': product,
         })
 
-    delivery = 6
+
+
+    if bag == {}:
+        delivery = 0
+    else:
+        delivery = 6
 
     grand_total = delivery + total
 

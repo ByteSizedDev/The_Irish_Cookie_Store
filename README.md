@@ -190,6 +190,23 @@ To run this project locally:
 
 # Deployment
 
+* Log in or sign up to Heroku.
+
+* Create an application.
+
+* In settings.py, connect to the Heroku database, using the secret key from Herokus config variables.
+
+* In your terminal migrate: python3 manage.py migrate
+
+* Connect your GitHub repository in Herokus deploy section.
+
+* Following up enable "Automatic Deployment".
+
+* Commit and push to GitHub.
+
+* Your application should start to build in Heroku.
+
+* Your application should now deploy and be available to use.
 
 # Credits
 
