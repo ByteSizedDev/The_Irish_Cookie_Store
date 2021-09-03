@@ -134,7 +134,50 @@ Here are a list of all the languages and technolgies I've used in this project.
 * Django
 
 # Testing
-# Bugs
+
+* Links and templates have been tested to make sure they arrive at the right place.
+
+* Buttons have also been tested to see they complete the required actions.
+
+* Forms have been tested so required fields are mandatory to complete the forms.
+
+* My code has been run through W3C Validators.
+
+* Tests have beem done to mamke sure Stripe payments is correctly connected to the application.
+
+* Products have been added, edited and deleted in the application(CRUD)
+
 # Running Locally
+
+To run this project locally :
+
+* Open your text editor.
+
+* Copy the link from the repository on "Clone or download"
+
+* Type git clone, then the URL you copied. git clone https://github.com/ByteSizedDev/The_Irish_Cookie_Store.git
+
+* Press Enter. Your local clone will be created.
+
+* Using : pip3 Install virtualenv.
+
+* Then : pip3 install > requirements.txt
+
+* Followed by : python3 manage.py migrate
+
+* Set secret keys for Stripe and Django in env.py file.
+
+* Create superuser : python3 manage.py createsuperuser
+
+* Finally start your application: python3 manage.py runserver
+
 # Deployment
+
+
 # Credits
+
+* I would like to thank the team at The Code Institute for helping me learn these technologies. To the various tutors that also helped me understand topics and fundamentals I was having issues with.
+
+* I used the mini project "Boutique Ado" alot as a referance for this project as I have a good friend that wanted to build an e-commerce website for their business.
+
+* Most of my backend came from the examples and videos on the topic. They were very helpful in describing what each part of the project was doing.
