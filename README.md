@@ -112,6 +112,10 @@ All images used in the project were owned and taken by the owner. All images wer
 
 ## Wireframes
 
+Some wireframe templates are included in a folder called "wireframes". They are very simple and basic.
+Most of the layout and design came along the way using various django apps. The "Boutique Ado" was also similar to structure of desired 
+store and features.
+
 # Technologies Used
 
 Here are a list of all the languages and technologies I've used in this project.
