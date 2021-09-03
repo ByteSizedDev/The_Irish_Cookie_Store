@@ -31,6 +31,9 @@ body {
     text-align: center;
 }
 
+i {
+    color: black;
+}
 
 /* sizing of images */
 .product-images {

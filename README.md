@@ -147,6 +147,12 @@ Here are a list of all the languages and technolgies I've used in this project.
 
 * Products have been added, edited and deleted in the application(CRUD)
 
+# Bugs
+
+## Unsolved Bugs
+
+I am awere that I still have 
+
 # Running Locally
 
 To run this project locally :
