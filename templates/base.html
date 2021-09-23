@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link rel="shortcut icon" type="image/jpg" href="{{MEDIA_URL}}favicon.png" alt="Home image of cookies">
+        <link rel="shortcut icon" type="image/jpg" href="{{MEDIA_URL}}favicon.png">
     {% endblock %}
 
     {% block extra_css %}
@@ -35,7 +35,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>The Irish Cookie Store{% block extra_title %}{% endblock %}</title>
+  <title>The Irish Cookie Store{% block extra_title %}{% endblock %}</title>
   </head>
   <body>
     <header class="container-fluid fixed-top">
@@ -134,36 +134,36 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}
 
 
- <!-- Footer -->
-<footer class="page-footer font-small cyan darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 py-5 text-center">
-          <div class="mb-5 flex-center">
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/theirishcookieco" target="blank_">
-              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x icon2"></i>
-            </a>
-             <!--Instagram-->
-             <a href="https://instagram.com/theirishcookiestore" target="blank_">
-                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x icon2"></i>
-              </a>
-            <!-- Email-->
-            <a href="mailto:theirishcookiestore@gmail.com">
-              <i class="fa fa-envelope fa-lg white-text mr-md-5 mr-3 fa-2x icon2"></i>
-            </a>
-          </div>
-          <div class="footer-copyright text-center font-weight-bold py-3">© 2020 - 2021 The Irish Cookie Store</div>
-        </div>
-      </div>  
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 py-5 text-center">
+                    <div class="mb-5">
+                          <!-- Facebook -->
+                            <a href="https://www.facebook.com/theirishcookieco" target="blank_">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x icon2"></i>
+                            </a>
+                            <!--Instagram-->
+                            <a href="https://instagram.com/theirishcookiestore" target="blank_">
+                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x icon2"></i>
+                            </a>
+                            <!-- Email-->
+                            <a href="mailto:theirishcookiestore@gmail.com">
+                            <i class="fa fa-envelope fa-lg white-text mr-md-5 mr-3 fa-2x icon2"></i>
+                            </a>
+                    </div>
+                    <div class="footer-copyright text-center font-weight-bold py-3">© 2020 - 2021 The Irish Cookie Store</div>
+                </div>
+            </div>
+        </div>  
+    </footer>
     
-  </body>
+</body>
 </html>
