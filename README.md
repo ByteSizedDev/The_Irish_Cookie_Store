@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The Irish Cookie Store is located in Co.Waterford. They make fresh artisan cookies. The company were looking to add a website for e-commerce to sell their products online easily and for the customer to be able to safely make a transaction.
+The Irish Cookie Store is located in County Waterford. They make fresh artisan cookies. The company were looking to add a website for e-commerce to sell their products online easily and for the customer to be able to safely make a transaction.
 
 # UX
 
@@ -20,7 +20,7 @@ The Irish Cookie Store is located in Co.Waterford. They make fresh artisan cooki
 
 * For our customers to be able to buy our cookies online.
 
-* For our customers to be able to view flavors and information about our products.
+* For our customers to be able to view flavours and information about our products.
 
 * For our customers to pay safely online.
 
@@ -30,17 +30,17 @@ The Irish Cookie Store is located in Co.Waterford. They make fresh artisan cooki
 
 * Buy cookies.
 
-* See flavors, pictures and images of products.
+* See flavours, pictures and images of products.
 
 * Pay safely.
 
 ## User Stories
 
-* As a user I would like to be able to purchase my cookies safely and securely over the internet.
+* As a user, I would like to be able to purchase my cookies safely and securely over the internet.
 
-* As a user I would like to see information about the cookies.
+* As a user, I would like to see information about the cookies.
 
-* As a user I would like to be able to purchase cookies individually or as a selection box.
+* As a user, I would like to be able to purchase cookies individually or as a selection box.
 
 
 ## Structure
@@ -49,7 +49,7 @@ The Irish Cookie Store is located in Co.Waterford. They make fresh artisan cooki
 
 * Each page has a navbar and footer container social links.
 
-* For mobile view there is a collapsible navbar.
+* For mobile view, there is a collapsible navbar.
 
 * Each webpage has it own content, for its intended use.
  
@@ -57,29 +57,29 @@ The Irish Cookie Store is located in Co.Waterford. They make fresh artisan cooki
 
 This website has the following features: 
 
-* A products page where the user can view, browse and buy the cookies.
+* A product's page where the user can view, browse and buy the cookies.
 
-* A cakes page displaying some cakes made by the company with some information if the user would like to get in touch to purchase one.
+* A cake's page displaying some cakes made by the company with some information if the user would like to get in touch to purchase one.
 
 * An about us page telling the using some more information about the company.
 
 * The website has login and logout functionality after registering as a user.
 
-* There is a profile page for the user the view there orders and shopping history.
+* There is a profile page for the user to view their orders and shopping history.
 
-* A shopping cart for the user the see what they are buying and how much they are spending is displayed.
+* A shopping cart for the user to see what they are buying and how much they are spending is displayed.
 
-* Stripe payments is user so the user can securely shop online and make safe transactions.
+* Stripe payments are for the user, so they can securely shop online and make safe transactions.
 
 * The Admin/Superuser can also add, edit and delete products.
 
 ## Colours
 
-* The project is mainly done in black and white. The background is white and the font is back.
+* The project is mainly done in black and white. The background is white, and the font is back.
 
-* On the home page I have used "Cookies" and "Cream" colors.
+* On the home page, I have used "Cookies" and "Cream" colours.
 
-* Other colors come from the images been used in the project.
+* Other colours come from the images been used in the project.
 
 ## Fonts
 
@@ -104,17 +104,16 @@ All images used in the project were owned and taken by the owner. All images wer
 
 * The home page has an image of a selection of cookies.
 
-* The products page has images of the selected cookies.
+* The product's page has images of the selected cookies.
 
-* The cakes page has images of cakes made by the company.
+* The cake's page has images of cakes made by the company.
 
 * The about page also has an image of a selection of cookies.
 
 ## Wireframes
 
 Some wireframe templates are included in a folder called "wireframes". They are very simple and basic.
-Most of the layout and design came along the way using various django apps. The "Boutique Ado" was also similar to structure of desired 
-store and features.
+Most of the layout and design came along the way using various Django apps.
 
 # Technologies Used
 
@@ -126,11 +125,11 @@ Here are a list of all the languages and technologies I've used in this project.
 
 * CSS
 
-* Javascript
+* JavaScript
 
 * Python
 
-### Frameworks/Librarays/Tools
+### Frameworks/Libraries/Tools
 
 * Bootstrap
 
@@ -143,6 +142,11 @@ Here are a list of all the languages and technologies I've used in this project.
 * S3
 
 * Amazon Web Services
+
+# Data Schema
+
+Within my "Data Schema" folder, I have an image showing the data the user has to include within the application, along with the data used for
+the products purchased on the website.
 
 # Testing
 
@@ -158,12 +162,6 @@ Here are a list of all the languages and technologies I've used in this project.
 
 * Products have been added, edited and deleted in the application(CRUD)
 
-# Bugs
-
-## Unsolved Bugs
-
-I am aware that I still have 
-
 # Running Locally
 
 To run this project locally:
@@ -176,7 +174,7 @@ To run this project locally:
 
 * Press Enter. Your local clone will be created.
 
-* Using: pip3 Install virtualenv.
+* Using: pip3 Install virtualenv
 
 * Then: pip3 install > requirements.txt
 
@@ -186,7 +184,7 @@ To run this project locally:
 
 * Create superuser: python3 manage.py createsuperuser
 
-* Finally start your application: python3 manage.py runserver
+* Finally, start your application: python3 manage.py runserver
 
 # Deployment
 
@@ -200,7 +198,7 @@ To run this project locally:
 
 * Connect your GitHub repository in Herokus deploy section.
 
-* Following up enable "Automatic Deployment".
+* Following up, enable "Automatic Deployment".
 
 * Commit and push to GitHub.
 
@@ -212,6 +210,6 @@ To run this project locally:
 
 * I would like to thank the team at The Code Institute for helping me learn these technologies. To the various tutors that also helped me understand topics and fundamentals I was having issues with.
 
-* I used the mini project "Boutique Ado" alot as a reference for this project as I have a good friend that wanted to build an e-commerce website for their business.
+* I used the mini project "Boutique Ado" as a reference for this project, as I have a good friend that wanted to build an e-commerce website for their business.
 
 * Most of my backend came from the examples and videos on the topic. They were very helpful in describing what each part of the project was doing.
