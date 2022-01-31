@@ -1,1 +1,9 @@
 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+{% if item.flavours %}
+    <p class="mb-0 mt-2 lead">Flavours:</p>
+    <ul>
+        {% for entry in item.flavours %}
+        <li><small>{{entry.flavour.name}} ({{entry.quantity}})</small></li>
+        {% endfor %}
+    </ul>
+{% endif %}

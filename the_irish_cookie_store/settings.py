@@ -20,10 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+# SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = "SECRET_KEY"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['the-irish-cookie-store.herokuapp.com', 'localhost', '127.0.0.1']
 
@@ -172,6 +174,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/staticfiles/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
@@ -204,9 +207,12 @@ if 'USE_AWS' in os.environ:
 
 # Stripe
 STRIPE_CURRENCY = 'eur'
-STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
-STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
-STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
+# STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
+# STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
+# STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
+STRIPE_PUBLIC_KEY = "pk_test_51JUN7bKa13T77VZLl7hcE9CgX2Aul3YVwxlKeO1Ph0H5rA3jY8QrHDJOkf9UWozeHUWz2aZfCyk31z5O1Kp1UdYt00aQTaTkRM"
+STRIPE_SECRET_KEY = "sk_test_51JUN7bKa13T77VZL2NPIxB9JrcDnQ36ZvHkBtUbYaZ7WRUx7Rm46GtfAOM5NHyCy9D6fOolMYsNKVq0rExQlbgaB00cz7QsTWw"
+STRIPE_WH_SECRET = "whsec_Mo7BRiAmg4N4ldxwqZAMdFXOpfmNdTDb"
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -218,4 +224,4 @@ else:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+    DEFAULT_FROM_EMAIL = f"{os.environ.get('EMAIL_HOST_USER')}"

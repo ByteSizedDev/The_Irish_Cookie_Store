@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -11,13 +15,13 @@
 
 {% block content %}
     <div class="container hero">
-        <div class="row h-100">
-            <div class="col-md-6 my-auto">
+        <div class="row h-100 align-items-start">
+            <div class="col-md-6">
                 <img src="{{MEDIA_URL}}company-logo.png" class="img-fluid text-center" alt="Company logo">
                 <h4 class="text-black font-weight-bold text-center info">The Irish Cookie Store make beautiful artisan handcrafted cookies.</h4>
                 <h4 class="text-center"><a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">View our cookies</a></h4>
             </div>
-            <div class="col-md-6 my-auto">
+            <div class="col-md-6">
                 <img src="{{MEDIA_URL}}image.jpg" class="img-fluid py-3" alt="Home image of cookies">
             </div>
         </div>

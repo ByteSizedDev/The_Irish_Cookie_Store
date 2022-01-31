@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Product, Category, FlavourImage, Flavour
 
 # Register your models here.
 
@@ -21,5 +21,21 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+class FlavourImageInline(admin.StackedInline):
+    max_num = 2
+    model = FlavourImage
+
+class FlavourAdmin(admin.ModelAdmin):
+    list_display = (
+        'product',
+        'name',
+    )
+    inlines = (
+        FlavourImageInline,
+    )
+
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(Flavour, FlavourAdmin)
