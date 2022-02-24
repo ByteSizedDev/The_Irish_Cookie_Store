@@ -59,6 +59,8 @@ This website has the following features:
 
 * A product's page where the user can view, browse and buy the cookies.
 
+* On the cookies box page you can select from 6 different flavours, each with a description and image.
+
 * A cake's page displaying some cakes made by the company with some information if the user would like to get in touch to purchase one.
 
 * An about us page telling the using some more information about the company.
